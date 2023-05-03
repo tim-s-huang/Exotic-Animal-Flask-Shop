@@ -1,0 +1,53 @@
+{% extends "base.html" %} 
+
+{% block title %} Unicorn {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Unicorn </h1>
+{% endblock %}
+
+{% block content %}
+<div class="item textbox">
+    <h4>Description:</h4>
+    <p class="info">
+        These majestic creatures are revered for their beauty and grace. 
+        With their shimmering coats and spiraled horns, unicorns are a symbol of purity and magic. 
+        Known for their ability to heal and bring good fortune, unicorns are often sought after by those in need of their mystical powers. 
+        Though rare and elusive, unicorns are a treasure to behold for those lucky enough to catch a glimpse of them and having one as a pet is a truly incredible honor.
+    </p>
+
+    <h4>Diet:</h4>
+    <p class="info">
+        Rainbows, clouds and mana-infused elixer
+    </p>
+
+    <h4>Habitat:</h4>
+    <p class="info">
+        Large grassy enclosures with high mana density
+    </p>
+
+    <h4>Lifespan:</h4>
+    <p class="info">
+        Infinite
+    </p>
+
+    <h4>Enviromental Impact:</h4>
+    <p class="info">
+        5/5 (Extinct?)
+    </p>
+
+    <h4>Price:</h4>
+    <p class="info">
+        $999.99
+    </p>
+
+    <br>
+
+    <form method="POST"> <button class="bigbutton" name="product-id" value="{{6}}"> Purchase </button> </form>
+
+    <br> <br>
+</div>
+
+<img class="imagebox align-middle" src="static/unicorn.jpg" alt="A majestic unicorn" width="700" height="600">
+
+{% endblock %}

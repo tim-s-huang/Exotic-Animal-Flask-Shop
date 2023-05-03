@@ -1,0 +1,53 @@
+{% extends "base.html" %} 
+
+{% block title %} Armadillo {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Armadillo </h1>
+{% endblock %}
+
+{% block content %}
+<div class="item textbox">
+    <h4>Description:</h4>
+    <p class="info">
+        Armadillos are small mammals native to the Americas, known for their distinctive armored shell. 
+        They have long snouts and strong claws that they use to dig burrows and forage for food. 
+        Armadillos are primarily nocturnal animals and spend most of their time sleeping during the day and searching for food at night.
+        Armadillos are fascinating animals and can make interesting pets for any family
+    </p>
+
+    <h4>Diet:</h4>
+    <p class="info">
+        Insects, small animals such as repiltes and birds & vegetation
+    </p>
+
+    <h4>Habitat:</h4>
+    <p class="info">
+        Humid enclosures with loose soil for burrowing 
+    </p>
+
+    <h4>Lifespan:</h4>
+    <p class="info">
+        12-15 Years
+    </p>
+
+    <h4>Enviromental Impact:</h4>
+    <p class="info">
+        2/5 (Threatened)
+    </p>
+
+    <h4>Price:</h4>
+    <p class="info">
+        $119.99
+    </p>
+
+    <br>
+
+    <form method="POST"> <button class="bigbutton" name="product-id" value="{{4}}"> Purchase </button> </form>
+
+    <br> <br>
+</div>
+
+<img class="imagebox align-middle" src="static/armadillo.jpg" alt="An adorable armadillo" width="700" height="600">
+
+{% endblock %}

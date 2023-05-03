@@ -1,0 +1,53 @@
+{% extends "base.html" %} 
+
+{% block title %} Polar Bear {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Polar Bear </h1>
+{% endblock %}
+
+{% block content %}
+<div class="item textbox">
+    <h4>Description:</h4>
+    <p class="info">
+        Polar bears are majestic and awe-inspiring animals that are well adapted to life in the Arctic region. 
+        They are the largest land carnivores in the world and are instantly recognizable with their distinctive white fur. 
+        Polar bears are highly intelligent and are known for their playful behavior, which includes sliding down snowdrifts and roughhousing with other bears. 
+        Polar bears can be extraordinary pets for those with the correct qualifications and facilities to look properly after them.
+    </p>
+
+    <h4>Diet:</h4>
+    <p class="info">
+        Seals, fish and marine mammals
+    </p>
+
+    <h4>Habitat:</h4>
+    <p class="info">
+        Cold, snowy enclosures with icy water for swimming
+    </p>
+
+    <h4>Lifespan:</h4>
+    <p class="info">
+        20-30 Years
+    </p>
+
+    <h4>Enviromental Impact:</h4>
+    <p class="info">
+        3/5 (Vunerable)
+    </p>
+
+    <h4>Price:</h4>
+    <p class="info">
+        $349.99
+    </p>
+
+    <br>
+
+    <form method="POST"> <button class="bigbutton" name="product-id" value="{{5}}"> Purchase </button> </form>
+
+    <br> <br>
+</div>
+
+<img class="imagebox align-middle" src="static/bear.jpg" alt="A large fluffy polar bear" width="700" height="600">
+
+{% endblock %}

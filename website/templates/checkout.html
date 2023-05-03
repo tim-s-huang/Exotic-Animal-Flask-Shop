@@ -1,0 +1,37 @@
+{% extends "base.html" %} 
+
+{% block title %} Checkout {% endblock %}
+
+<script src="static/website.js"></script>
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Checkout </h1>
+{% endblock %}
+
+{% block extras %}
+<label for="firstInput"> <h4> Enter your first name(s): </h4> </label>
+<input type="text" style="width: 200px; height: 25px;" id="firstInput"> 
+<p id="firstHelp"> Input your first and middle name(s) here </p> <br> 
+
+<label for="last-input"> <h4> Enter your last name: </h4> </label>
+<input type="text" style="width: 200px; height: 25px;" id="lastInput"> 
+<p id="lastHelp"> Input your last name here </p> <br> 
+
+<form action="cardNoValid" method="POST">
+    <label for="card-input"> <h4> Enter your card number: </h4> </label>
+    <input type="text" minlength="16" maxlength="19" style="width: 200px; height: 25px;" id="cardInput" name="cardNo"> 
+    <p id="cardHelp"> Input your card detials here (must be 16 digits, spaces and dashes are allowed)</p> <br> <br>
+    {% if validCard is defined %}
+        {% if validCard %}
+        {% else %}
+            <h4 style="color: red;"> Card Number is Invalid </h4> <br>
+        {% endif %}
+    {% else %}
+    <h4 style="color: red;"> Please input your details </h4> <br>
+    {% endif %}
+    <h4 style="padding-top: 5px;"> Your current total is: ${{ total }} <h4>
+    <input type="submit" name="Purchase" value="Confirm Purchase" class="bigbutton" style="border-radius: 0%; width: 200px; height: 100px">
+</form> <br> <br>
+
+
+{% endblock %}

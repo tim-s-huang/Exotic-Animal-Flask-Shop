@@ -1,0 +1,52 @@
+{% extends "base.html" %} 
+
+{% block title %} Chimpanzee {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Chimpanzee </h1>
+{% endblock %}
+
+{% block content %}
+<div class=" item textbox">
+    <h4>Description:</h4>
+    <p class="info">
+        Chimpanzees are highly intelligent primates that are native to Africa. 
+        They are social animals that live in large communities, and their behavior is characterized by complex communication, tool use, and problem-solving skills.
+        In the wild, they inhabit forested areas and can travel long distances each day to forage for food.  
+        They are one of the closest living relatives of humans, sharing over 98% of our DNA
+        Owning a chimp as a pet can be a life-changing experience however high level of care is required due to the risk of injury or aggression.
+    </p>
+
+    <h4>Diet:</h4>
+    <p class="info">
+        Fruit, Leaves, FLowers, Seeds & Insects
+    </p>
+
+    <h4>Habitat:</h4>
+    <p class="info">
+        Spacious, humid enclosures with areas for climbing & shelter
+    </p>
+
+    <h4>Lifespan:</h4>
+    <p class="info">
+        50+ Years
+    </p>
+
+    <h4>Enviromental Impact:</h4>
+    <p class="info">
+        4/5 (Endangered)
+    </p>
+
+    <h4>Price:</h4>
+    <p class="info">
+        $249.99
+    </p>
+
+    <br>
+
+    <form method="POST"> <button class="bigbutton" name="product-id" value="{{3}}"> Purchase </button> </form>
+</div>
+
+<img class="imagebox align-middle" src="static/chimp.jpg" alt="A mischievous chimp" width="700" height="600">
+
+{% endblock %}

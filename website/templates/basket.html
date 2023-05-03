@@ -1,0 +1,39 @@
+{% extends "base.html" %} 
+
+{% block title %} Basket {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> My Basket </h1>
+{% endblock %}
+
+{% block content %}
+<div class="basketbox" style="max-width: 1200px;">
+    <h4> You are currently purchasing: </h4>
+
+    <table style=>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in basket %}
+          <tr>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td> <form method="POST"> <button class="button" name="product-id" value="{{item[0]}}"> Remove </button> </form> </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block extras %}
+<h4 class="bill" style="padding-top: 5px;"> Your current total is: ${{ total }} </h4> <br> 
+<button class="button" style="width: 250px; height: 120px; font-size: 45px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> <a href="checkout"> Checkout </a> </button>
+{% endblock %}

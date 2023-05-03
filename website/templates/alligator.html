@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+
+{% block title %} Alligator {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Alligator </h1>
+{% endblock %}
+
+{% block content %}
+<div class="item textbox">
+    <h4>Description:</h4>
+    <p class="info">
+        Alligators are large, aquatic reptiles that are native to the southeastern United States and parts of Central and South America. 
+        They are fascinating creatures that have been around for millions of years and can grow up to 14 feet in length. 
+        They are excellent swimmers and can hold their breath for up to an hour. 
+        Alligators are fantastic pets, but owning one requires commitment of time and resources since
+        they can be dangerous and require specialized care and handling.
+    </p>
+
+    <h4>Diet:</h4>
+    <p class="info">
+        Fish, birds and mammals such as deer and pigs
+    </p>
+
+    <h4>Habitat:</h4>
+    <p class="info">
+        Semi-aquatic enclosures with wetland and freshwater
+    </p>
+
+    <h4>Lifespan:</h4>
+    <p class="info">
+       50+ Years
+    </p>
+
+    <h4>Enviromental Impact:</h4>
+    <p class="info">
+        2/5 (Threatened)
+    </p>
+
+    <h4>Price:</h4>
+    <p class="info">
+        $174.99
+    </p>
+
+    <br>
+
+    <form method="POST"> <button class="bigbutton" name="product-id" value="{{2}}"> Purchase </button> </form>
+
+    <br> <br>
+</div>
+
+<img class="imagebox align-middle" src="static/alligator.jpg" alt="A devious looking alligator" width="700" height="600">
+
+{% endblock %}

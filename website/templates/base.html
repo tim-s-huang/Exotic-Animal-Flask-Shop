@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width", inital-scale="1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='Stylesheet.css') }}">
+        <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="/">• Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">• Animals
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="capybara"> Capybara </a>
+                <a href="alligator"> Alligator </a>
+                <a href="chimp"> Chimpanzee </a>
+                <a href="armadillo"> Armadillo </a>
+                <a href="bear"> Polar Bear </a>
+                <a href="unicorn"> Unicorn </a>
+              </div>
+            </div>
+            <a href="basket"> • Basket</a>
+          </div>
+        
+        {% block heading %}{% endblock %}
+
+        <div class="container">
+        {% block content %}{% endblock %} 
+        </div>
+
+        {% block extras %}{% endblock %}
+    </body>
+</html>
+

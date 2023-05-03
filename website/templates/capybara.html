@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+
+{% block title %} Capybara {% endblock %}
+
+{% block heading %}
+<h1 style="font-size: 70px; margin-top: 5px;"> Capybara </h1>
+{% endblock %}
+
+{% block content %}
+<div class="item textbox">
+    <h4>Description:</h4>
+    <p class="info">
+        The capybara is a large, social, and semi-aquatic rodent native to South America. 
+        They are friendly and docile animals, making them a great choice for exotic pet owners. 
+        Capybaras have a unique appearance with a sleek, shiny coat of fur ranging from reddish-brown to dark brown. 
+        They are excellent swimmers and require access to water to thrive. 
+        Despite their size, capybaras are easy to handle and care for, and are great for all owners.
+    </p>
+
+    <h4>Diet:</h4>
+    <p class="info">
+        Fresh grass, aquatic plants and fruits
+    </p>
+
+    <h4>Habitat:</h4>
+    <p class="info">
+        Grassy enclosures with freshwater to swim
+    </p>
+
+    <h4>Lifespan:</h4>
+    <p class="info">
+        8-12 Years
+    </p>
+
+    <h4>Enviromental Impact:</h4>
+    <p class="info">
+        1/5 (Least Concern)
+    </p>
+
+    <h4>Price:</h4>
+    <p class="info">
+        $89.99
+    </p>
+
+    <br>
+
+    <form method="POST"> <button class="bigbutton" name="product-id" value="{{1}}"> Purchase </button> </form>
+
+    <br> <br>
+</div>
+
+<img class="imagebox align-middle" src="static/capybara.jpg" alt="A chilled out capybara" width="700" height="600">
+
+{% endblock %}
