@@ -14,11 +14,10 @@ An online exotic animal shop built with Python, Flask, SQLite, HTML and CSS for 
 git clone https://github.com/tim-s-huang/Flask-Online-Shop.git
 cd Flask-Online-Shop
 python -m venv .venv
-source .venv/Scripts/activate    <img width="1860" height="943" alt="Flask Shop" src="https://github.com/user-attachments/assets/eab4ef11-fede-416c-a439-33232bfa88b7" />
-
+source .venv/Scripts/activate    # Windows (Git Bash)
 pip install -r requirements.txt
 python main.py
 ```
-Then open http://127.0.0.1:5000 in a rbowser
+Then open http://127.0.0.1:5000 in a browser
 
 All images are from [Unsplash](https://unsplash.com/). No animals were harmed in the making of this website.
