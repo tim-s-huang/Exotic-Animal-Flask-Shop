@@ -1,8 +1,9 @@
 from flask import Flask
+import os
 
 def create_app():
     app = Flask(__name__, static_url_path='/static')
-    app.config['SECRET KEY'] = 'I love cardiff university'
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-only-change-me')
     
     from .pages import pages
 
