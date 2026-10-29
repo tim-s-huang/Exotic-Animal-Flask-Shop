@@ -1,6 +1,6 @@
 # Exotic Animal Flask Shop
 
-An online exotic animal shop built with Python, Flask, SQLite, HTML and CSS for the Web Applications module of my Computer Science BSc at Cardiff University, 2023
+An online exotic animal shop built with Python, Flask, SQLite, HTML and CSS for the Web Applications module of my Computer Science BSc at Cardiff University, 2023.
 
 <img width="1860" height="943" alt="Flask Shop" src="https://github.com/user-attachments/assets/49691cea-648a-4a11-b13d-bf1b7554edf1" />
 
@@ -11,8 +11,8 @@ An online exotic animal shop built with Python, Flask, SQLite, HTML and CSS for 
 
 ## Run Locally
 ```bash
-git clone https://github.com/tim-s-huang/Flask-Online-Shop.git
-cd Flask-Online-Shop
+git clone https://github.com/tim-s-huang/exotic-animal-flask-shop.git
+cd exotic-animal-flask-shop
 python -m venv .venv
 source .venv/Scripts/activate    # Windows (Git Bash)
 pip install -r requirements.txt
